@@ -120,15 +120,6 @@ font-size:20px;
 max-width:1000px;
 }
 
-.hero::before, .section::before {
-  content:"";
-  position:absolute;
-  top:0; left:0;
-  width:100%; height:100%;
-  background:rgba(0,0,0,0.5);
-  z-index:0;
-}
-
 
 /* CARD HOME */
 
@@ -212,35 +203,7 @@ pointer-events:none;
 
 /* MEMBERS */
 
-.members{
-display:flex;
-justify-content:center;
-gap:40px;
-padding:60px;
-}
 
-.card{
-background:white;
-padding:20px;
-border-radius:15px;
-text-align:center;
-width:220px;
-box-shadow:0 10px 20px rgba(0,0,0,0.1);
-transition:0.3s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto 15px auto;
-}
 /* TIMELINE */
 
 .timeline{
@@ -262,7 +225,46 @@ box-shadow:0 5px 15px rgba(0,0,0,0.1);
 .gallery{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:/* Tối ưu cho Section Members */
+.members-section {
+    padding: 120px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+/* Giữ nguyên style card cũ nhưng bỏ margin cố định */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 280px; /* Tăng kích thước một chút cho đẹp */
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: #333; /* Đổi màu chữ card để dễ đọc trên nền trắng */
+}
+
+/* Chỉnh màu cho các nút điều hướng của Swiper cho khớp tone màu web */
+.swiper-button-next, .swiper-button-prev {
+    color: #38bdf8;
+}
+
+.swiper-pagination-bullet-active {
+    background: #38bdf8;
+}
+20px;
 padding:40px;
 }
 
@@ -295,4 +297,4 @@ to{
 opacity:1;
 transform:translateY(0);
 }
-}
+
