@@ -1,46 +1,77 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<title>Thành Viên</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Thành Viên</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="logo">12TN4 MEMORY</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="members.html">Thành Viên</a></li>
+            <li><a href="events.html">Sự Kiện</a></li>
+            <li><a href="media.html">Media</a></li>
+        </ul>
+    </nav>
 
+    <section class="members-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="picture/nghiaavatar.jpg" alt="Avatar">
+                        <h3>Bùi Trọng Nghĩa</h3>
+                        <p>Lớp trưởng gương mẫu</p>
+                    </div>
+                </div>
 
-<nav class="navbar">
-  <div class="logo">12TN4 MEMORY</div>
-  <ul class="nav-links">
-    <li><a href="index.html">Trang Chủ</a></li>
-    <li><a href="members.html">Thành Viên</a></li>
-    <li><a href="events.html">Sự Kiện</a></li>
-    <li><a href="media.html">Media</a></li>
-  </ul>
-  </div>
-</nav>
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Avatar">
+                        <h3>Nguyễn Tấn Lộc</h3>
+                        <p>Cây hài của lớp</p>
+                    </div>
+                </div>
 
-<section class="members">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Avatar">
+                        <h3>Nguyễn Quốc Danh</h3>
+                        <p>Trùm công nghệ</p>
+                    </div>
+                </div>
 
-<div class="card">
-<img src=picture\nghiaavatar.jpg>
-<h3>Bùi Trọng Nghĩa</h3>
-<p></p>
-</div>
+                </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
 
-<div class="card">
-<img src="https://i.pravatar.cc/150?img=2">
-<h3>Nguyễn Tấn Lộc</h3>
-<p></p>
-</div>
-
-<div class="card">
-<img src="https://i.pravatar.cc/150?img=3">
-<h3>Nguyễn Quốc Danh</h3>
-<p></p>
-</div>
-
-</section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+            },
+        });
+    </script>
 </body>
 </html>
