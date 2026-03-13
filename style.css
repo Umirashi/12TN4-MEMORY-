@@ -198,37 +198,18 @@ pointer-events:none;
 }
 
 /* MEMBERS */
-
-
-/* TIMELINE */
-
-.timeline{
-max-width:800px;
-margin:auto;
-padding:40px;
-}
-
-.event{
-background:white;
-padding:20px;
-margin:20px 0;
-border-left:5px solid #6366f1;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-/* GALLERY */
-
-.gallery{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:/* Tối ưu cho Section Members */
-.members-section {
-    padding: 120px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  width: 280px;
+  color: #333;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+  position: relative; 
+  z-index: 1;
+	}
 .swiper {
     width: 100%;
     padding-top: 50px;
@@ -264,6 +245,38 @@ gap:/* Tối ưu cho Section Members */
 padding:40px;
 }
 
+
+
+/* TIMELINE */
+
+.timeline{
+max-width:800px;
+margin:auto;
+padding:40px;
+}
+
+.event{
+background:white;
+padding:20px;
+margin:20px 0;
+border-left:5px solid #6366f1;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:/* Tối ưu cho Section Members */
+.members-section {
+    padding: 120px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .gallery img{
 width:100%;
 border-radius:10px;
@@ -293,6 +306,7 @@ to{
 opacity:1;
 transform:translateY(0);
 }
+
 
 
 
