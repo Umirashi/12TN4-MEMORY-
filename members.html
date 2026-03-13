@@ -2,12 +2,12 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Thành Viên</title>
+    <title>Thành Viên - 12TN4 MEMORY</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
     <nav class="navbar">
         <div class="logo">12TN4 MEMORY</div>
         <ul class="nav-links">
@@ -16,37 +16,34 @@
             <li><a href="events.html">Sự Kiện</a></li>
             <li><a href="media.html">Media</a></li>
         </ul>
-    </nav>
+        </nav>
 
     <section class="members-section">
+        <h2 style="text-align: center; margin-bottom: 20px;">Thành Viên Lớp</h2>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-                
                 <div class="swiper-slide">
                     <div class="card">
-                        <img src="picture/nghiaavatar.jpg" alt="Avatar">
+                        <img src="picture/nghiaavatar.jpg" alt="Bùi Trọng Nghĩa">
                         <h3>Bùi Trọng Nghĩa</h3>
                         <p>Lớp trưởng gương mẫu</p>
                     </div>
                 </div>
-
                 <div class="swiper-slide">
                     <div class="card">
-                        <img src="https://i.pravatar.cc/150?img=2" alt="Avatar">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Nguyễn Tấn Lộc">
                         <h3>Nguyễn Tấn Lộc</h3>
                         <p>Cây hài của lớp</p>
                     </div>
                 </div>
-
                 <div class="swiper-slide">
                     <div class="card">
-                        <img src="https://i.pravatar.cc/150?img=3" alt="Avatar">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Nguyễn Quốc Danh">
                         <h3>Nguyễn Quốc Danh</h3>
                         <p>Trùm công nghệ</p>
                     </div>
                 </div>
-
-                </div>
+            </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -59,14 +56,9 @@
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+            centeredSlides: true,
+            pagination: { el: ".swiper-pagination", clickable: true },
+            navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
             breakpoints: {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },
